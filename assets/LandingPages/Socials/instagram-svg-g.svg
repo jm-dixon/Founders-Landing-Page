@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+	<title>New Project</title>
+	<defs>
+		<image  width="93" height="90" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF0AAABaBAMAAAAoWkdIAAAAAXNSR0IB2cksfwAAADBQTFRFAAAANEpEyelfNEpEl4dBL0RAMUZCQltSoY1AwLxLt6dFrJM+iIBGMkdCMkdCL0M/bmtiKgAAABB0Uk5TAFP/VGRKRliB0b2Le1JRHz0CNo0AAAEMSURBVHic7dfBDcIwDAVQKxLiiMQEKAfEDUZAjNgROgITMAMTMAohUJomju1fqVIO9bUv+c4ldYiK2vuhLuXHom4+rauiNz6ro8hz/akDxoUFW96fKtzxPBTI+QUC544gcWaB1A3XkcLzAG37PEDl0wB9+2mAgacBlu3TANSb+NiQbfsxwMj/AaC3tjM0hHoz/zUEens734ZQD/DY0MLeId635yEeDrz61a++He8g397909p9Dv+Plv6fwt6Z/bz5AZ5/rAFz5zfY2xoa50l0voU9Op/D8z/6voDfL+j7SAkoOPxekxawnFxX4R3Lqwn87jGhZ3hf5aHuBX9InOiZ8ZfMiXapPms6lnTQN+L8xfhP5BZEAAAAAElFTkSuQmCC"/>
+		<image  width="85" height="85" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAABVCAMAAAAPK1hoAAAAAXNSR0IB2cksfwAAAK5QTFRFAAAAyelfyt1WqYMoiG8peGQpXFMqWlIqRUUqOj0qX1QpemYpQ0MqGSkrhm0pLDUrUUwqR0YqHiwrNToqcnU3JTArbF0pwLA8JzIrPkAqxL1Dx8dJyuNbrogpyeVcnHsoIC0rIi8rm3ooVU8qxsJGhGwpyedddmMpq4QoNzwqpIAoTUoqvqs6f2kpMjkqfWcpGyorQEIqmXkoNjsqU00qTEkqTkoqwLE8PD8qj3MojkjGgQAAADp0Uk5TAP///////////////////////////////////////////////////////////////////////////53JphUAAAKlSURBVHiczZl5V8IwDMAdzCHMgYoD5oVyyFB0Ap7f/4vZTI5tbXqk9D3zD12a/V6XXkk4OlKJx4vyHWOiLVmCJIOVTAJXi2nI1WYacI2YulxjqA6WAFVjSVAVlgiVY8lQGdYCimOtoBjWEirGWkNF2ANAeexBoFWs2KZW94+DxkZOmifbZiv06zUNrMjAP41kcuqrqILudkfKBOm05Vi+80zJBDmTUfm+8/yli+6l6CuZXHYvcotzCVY80rjXR5gg/d5APFoU2gb75ErCBLlOwIz3LUaFiUoUTBDAdhAqp/aZ8eBayru5vYPRghP4BSamwjrtSaHD++hhxH57sG71qDWYfdlEeV7MTB7YaPuwErhdJhxqnVl2pdCrfFXdslaX/dZFg+V04NZxRTeZBkkzCaaTv0fwZ/zIGmPMsZwuZJazkiad73bTPAXF0yCKh9CYMVWoRW1VLZ9Lu/Q51y32I2gJqJzKazDLl8Lza2Xzvxb6Mvbc4BEIdVSBvi2zNE2z5VsFuyJS889fbz7YW6z3TgAZ0agpUN4LvR+gSC2pMPvrUjeMdm5HnYBPF6XuBfh2YkWdsvay0r9kuqkVNWDtrNIPqymwoibFqdlIWjh99amfBWoToTb/yVjd+9XNGnCzXt3srb9z4KPQe5BzwM2ZddDz1fYuIN5bG8HuLdIduxP9O1YjHtiJfjygjl32gsYulDhrK3icRYkJt2IQE+aOjVWRNshXjLnVJtb+jvBYm5oXfAE0+sGoxBwGPp9bgrLMaJdvjWdhthqVZZWFs7FGvkXODfmRyjNOrTyW96kyPbbPufH6QNiyqA+4qWU4qrs4qhE5qmc5qr05qhM6qmk6qr86qhU7qms7qsE7+r/AlKvJNOIaMLW5hkwtLoGpAlOROFn5zi98c16wHgLR3gAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="3" y="5"/>
+	<use id="Background" href="#img2" x="7" y="7"/>
+</svg>
