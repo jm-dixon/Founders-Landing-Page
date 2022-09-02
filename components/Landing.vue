@@ -9,7 +9,7 @@
           <h4>A place where innovation <br />meets inspriation</h4>
         </div>
         <div class="hook-container">
-          <h4>COMING SOON</h4>
+          <h4 style="padding-bottom: 3em;">COMING SOON</h4>
           <h4 style="color: #9b493c">FOR UPDATES SIGN UP BELOW</h4>
         </div>
       </div>
@@ -69,18 +69,34 @@
     </div>
     <div class="footer-container">
       <div class="social-logos-mobile">
-        <img class="social-icon" :src="socials[0]" />
-        <img class="social-icon" :src="socials[1]" />
-        <img class="social-icon" :src="socials[2]" />
-        <img class="social-icon" :src="socials[3]" />
+        <img
+          class="social-icon"
+          :src="socials[3]" />
+        <img
+          class="social-icon"
+          :src="socials[2]" />
+        <img
+          class="social-icon"
+          :src="socials[1]" />
+        <img
+          class="social-icon"
+          :src="socials[0]" />
       </div>
       <img class="founders-logo" :src="foundersPlaceLogo" />
       <div class="footer-content">
         <div class="social-logos">
-          <img class="social-icon" :src="socials[0]" />
-          <img class="social-icon" :src="socials[1]" />
-          <img class="social-icon" :src="socials[2]" />
-          <img class="social-icon" :src="socials[3]" />
+          <img
+            class="social-icon"
+            :src="socials[3]" />
+          <img
+            class="social-icon"
+            :src="socials[2]" />
+          <img
+            class="social-icon"
+            :src="socials[1]" />
+          <img
+            class="social-icon"
+            :src="socials[0]" />
         </div>
         <div class="footer-links">
           <p class="copyright">@The Pioneer</p>
@@ -170,13 +186,13 @@ body {
 }
 
 .logo-container {
-  padding: 1.5em 1em 1em;
+  padding: 0 1em 1em;
 }
 
 .logo-container img {
   width: 25%;
   margin: 0 auto;
-  padding: 2em 0 0;
+  padding: 1em 0 3em;
 }
 
 .title-container {
@@ -191,7 +207,7 @@ body {
 
 .hook-container {
   color: #819050;
-  padding: 5em 0 4em;
+  padding: 5em 0 1em;
   font-size: 1.5em;
   font-family: 'Jost 300 Light', sans-serif;
   letter-spacing: 3px;
@@ -304,7 +320,7 @@ body {
 }
 
 .submit-button {
-  padding: 0.8em 1em;
+  padding: 0.5em 0.8em;
   width: 50%;
   background-color: #c9e95f;
   border: 1px solid black;
@@ -346,7 +362,7 @@ body {
 
 .founders-logo {
   width: 15%;
-  padding: 3em 0 1.8em 3em;
+  padding: 2em 0 1.8em 3em;
 }
 
 .footer-content {
