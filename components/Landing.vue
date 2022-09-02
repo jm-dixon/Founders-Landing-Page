@@ -209,7 +209,7 @@ body {
   color: #819050;
   padding: 5em 0 1em;
   font-size: 1.5em;
-  font-family: 'Jost 300 Light', sans-serif;
+  font-family: 'Solano Gothic M', sans-serif;
   letter-spacing: 3px;
 }
 
@@ -222,15 +222,13 @@ body {
   margin: 0;
   padding: 0 0 0 1.5em;
   float: left;
-  font-family: 'Contralto Big R', sans-serif;
+  font-family: 'Solano Gothic M', sans-serif;
 }
 
 .paragraph-container :is(h1, h2, h3, h4, h5, h6) {
   font-size: 2.5em;
   color: #c9e95f;
   line-height: 40px;
-  font-family: 'Solano Gothic M', sans-serif;
-  font-weight: 100;
 }
 
 .paragraph-container p {
@@ -239,8 +237,6 @@ body {
   text-align: left;
   width: 78%;
   color: white;
-  font-family: 'Solano Gothic M', sans-serif;
-  font-weight: 100;
 }
 
 .container {
@@ -253,15 +249,13 @@ body {
   padding: 0;
   margin: 0;
   float: left;
-  font-family: 'Contralto Big R', sans-serif;
+  font-family: 'Solano Gothic M', sans-serif;
 }
 
 .form-container form {
   margin: 0.5em 0;
   width: 90%;
   padding: 0;
-  font-family: 'Solano Gothic M', sans-serif;
-  font-weight: 100;
   font-size: 1.5em;
   color: white;
 }
@@ -271,8 +265,6 @@ body {
   font-size: 2.5em;
   color: #c9e95f;
   line-height: 40px;
-  font-family: 'Solano Gothic M', sans-serif;
-  font-weight: 100;
 }
 
 .personal-input {
@@ -330,7 +322,6 @@ body {
 .developments-div {
   padding: 1em 0;
   font-family: 'Solano Gothic M', sans-serif;
-  font-weight: 100;
 }
 
 .developments-logo-pattern {
@@ -351,7 +342,7 @@ body {
   padding: 2em 0 0;
   background-color: #1c113b;
   float: left;
-  font-family: 'Contralto Big R', sans-serif;
+  font-family: 'Solano Gothic M', sans-serif;
 }
 
 .pioneer-logo {
