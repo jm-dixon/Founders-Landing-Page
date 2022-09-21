@@ -96,13 +96,13 @@ textarea {
   resize: vertical;
 }
 
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   appearance: none;
 }
 
-input[type='radio'],
-input[type='checkbox'] {
+input[type="radio"],
+input[type="checkbox"] {
   &::-ms-check {
     display: none;
   }
@@ -180,7 +180,7 @@ img {
   height: auto;
   font-style: italic;
 
-  &[src*='.svg'] {
+  &[src*=".svg"] {
     width: 100% \9;
   }
 
@@ -189,8 +189,8 @@ img {
   }
 }
 
-_::-ms-reveal,
-img[src*='.svg'] {
+::-ms-reveal,
+img[src*=".svg"] {
   width: 100%;
 }
 
@@ -218,5 +218,5 @@ svg {
   display: inline-block;
   width: inherit;
   height: inherit;
-  fill: currentColor;
+  fill: currentcolor;
 }

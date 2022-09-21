@@ -21,7 +21,7 @@ export default {
   css: [
     {
       lang: 'postcss',
-      src: '~/assets/css/reset.css',
+      src: '~/assets/css/main.css',
     },
   ],
 
@@ -52,5 +52,18 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    postcss: {
+      plugins: {
+        'postcss-import': {},
+        'postcss-mixins': {},
+        'postcss-calc': {},
+        'postcss-nested': {},
+        "postcss-custom-media": {},
+      },
+      preset: {
+        stage: 1,
+      },
+    },
+  },
 }

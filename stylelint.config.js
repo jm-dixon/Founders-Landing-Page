@@ -1,11 +1,16 @@
+// stylelint.config.js
 module.exports = {
-  customSyntax: 'postcss-html',
   extends: [
     'stylelint-config-standard',
-    'stylelint-config-recommended-vue',
-    'stylelint-config-prettier',
   ],
-  // add your custom config here
-  // https://stylelint.io/user-guide/configuration
-  rules: {},
-}
+
+  rules: {
+    'font-family-no-missing-generic-family-keyword': null,
+    'no-descending-specificity': null,
+    'block-no-empty': null,
+    'no-duplicate-selectors': null,
+    'font-family-no-duplicate-names': null,
+    'selector-class-pattern': null,
+    'at-rule-no-unknown': null,
+  },
+};
