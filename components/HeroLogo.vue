@@ -43,9 +43,9 @@ export default {
   display: flex;
   background-color: var(--color-secondary);
   color: white;
-  height: auto !important;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
   @media (--desktop-lg) {
     flex-direction: row;
@@ -54,22 +54,15 @@ export default {
 
 .HeroLogo__logo-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .HeroLogo__logo-img {
   @mixin interpolate padding-top, 3, 4;
   @mixin interpolate width, 10, 20;
-}
 
-.HeroLogo__texture-img {
-  width: 100%;
-  height: 8%;
-  object-fit: cover;
-
-  @media (--desktop-lg) {
-    width: 7%;
-    height: 100%;
-  }
+  padding: 0;
 }
 
 .HeroLogo__coming-soon {
