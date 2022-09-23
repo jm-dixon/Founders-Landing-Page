@@ -2,7 +2,6 @@
   <div class="HeroLogo">
     <div class="HeroLogo__logo-wrapper">
       <img :src="logoUrl" class="HeroLogo__logo-img">
-      <h3 class="HeroLogo__coming-soon">Coming Soon</h3>
     </div>
   </div>
 </template>

@@ -2,7 +2,7 @@
   <div class="Signup">
     <h1 class="Signup__heading">Sign up<br>for updates</h1>
     <div class="Signup__name-wrapper">
-      <input v-model="firstName" type="text" placeholder="First name">
+      <input v-model="firstName" type="text" placeholder="Full name">
       <input v-model="lastName" type="text" placeholder="Surname">
     </div>
     <input v-model="email" type="text" placeholder="Email address">
@@ -109,10 +109,9 @@ input[type=text] {
 }
 
 input[type=text]::placeholder {
-  @mixin interpolate font-size, 1.4, 1.8;
-
   font-family: var(--font-default);
   color: var(--color-secondary);
+  font-size: 3rem;
 }
 
 input[type=checkbox] {
@@ -169,6 +168,7 @@ input[type=checkbox]:checked::after {
 .Signup__developments {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 2em;
 }
 

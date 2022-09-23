@@ -56,6 +56,8 @@ export default {
 
 .Welcome__text {
   line-height: 1.3;
+  color: var(--color-text-secondary);
+  margin-top: 8rem;
 }
 
 .Welcome__text:not(:first-of-type) {

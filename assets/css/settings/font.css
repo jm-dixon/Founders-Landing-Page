@@ -24,7 +24,7 @@
 }
 
 :root {
-  --font-default: 'IBM Plex Sans R', sans-serif;
+  --font-default: 'Solano Gothic M', sans-serif;
 
   font-family: var(--font-default);
 }

@@ -94,9 +94,17 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  row-gap: var(--spacing-xl);
+  padding:
+    var(--spacing-xl)
+    var(--spacing-sm)
+    var(--spacing-lg)
+    var(--spacing-sm);
 
-  @media (--desktop-lg) {
+  @media (--laptop) {
     flex-direction: row;
+    height: 22.5rem;
+    padding: 5rem 8.5rem 5rem 8.5rem;
   }
 }
 
@@ -105,7 +113,6 @@ export default {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: var(--spacing-2xl);
 
   @media (--desktop-lg) {
     flex-direction: row;
@@ -121,7 +128,6 @@ export default {
 
   @media (--desktop-lg) {
     margin-top: 0;
-    margin-left: var(--spacing-lg);
   }
 }
 
@@ -154,7 +160,7 @@ export default {
 
   @media (--desktop-lg) {
     width: 23vw;
-    text-align: center;
+    text-align: right;
     order: initial;
     margin-top: 0;
   }

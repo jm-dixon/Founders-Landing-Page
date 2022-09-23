@@ -1,6 +1,6 @@
 <template>
   <div class="Home">
-    <!--<HeroLogo />-->
+    <HeroLogo />
     <HeroImage />
     <Welcome />
     <Signup />
@@ -102,6 +102,16 @@ export default {
     height: 100%;
     grid-column: 1 / span 2;
     grid-row: 3 / 4;
+  }
+}
+
+.Home__body {
+  /* --grid-row-gap: var(--spacing-xl); */
+
+  @media (--laptop) {
+    --grid-columns: 2;
+    --grid-column-gap: 0;
+    --grid-row-gap: 0;
   }
 }
 
