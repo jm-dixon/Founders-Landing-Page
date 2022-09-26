@@ -1,92 +1,81 @@
 <!-- eslint-disable vue/no-v-html -->
 <template>
-  <div class="Footer">
-    <div class="Footer__company-logos">
+  <div class="TheFooter">
+    <div class="TheFooter__company-logos">
       <a href="/" target="_blank">
-        <img :src="foundersPlaceLogo" class="Footer__founders-place-logo-img">
+        <LogoFoundersPlace class="TheFooter__logo text-color-secondary"/>
+        <!-- <img :src="foundersPlaceLogo"> -->
       </a>
     </div>
-    <div class="Footer__social-icons-wrapper">
+    <div class="TheFooter__social-links">
+      <a
+        v-for="icon in socialLinks"
+        :key="icon.name"
+        :href="icon.url"
+      >
+        <component
+          :is="`Icon${icon.name}`"
+          class="TheFooter__social-icon"
+        />
+      </a>
+      <!-- <IconFacebook class="TheFooter__social-icon" />
+      <IconTwitter class="TheFooter__social-icon" />
+      <IconYoutube class="TheFooter__social-icon" />
+      <IconInstagram class="TheFooter__social-icon" />
       <a
         v-for="(obj, key) in socialIcons"
         :key="key" :src="obj.url"
         :href="obj.externalUrl"
         target="_blank"
       >
-        <img :src="obj.icon" class="Footer__social-icon-img">
-      </a>
+        <img :src="obj.icon" class="TheFooter__social-icon-img">
+      </a> -->
     </div>
 
-    <div v-if="footerLinks" class="Footer__links-wrapper">
-      <a
-        v-for="link in footerLinks" :key="link.text"
-        :href="link.url"
-        class="Footer__links-item"
-        v-html="link.text"
-      />
+    <div class="TheFooter__links-wrapper">
+      <span class="TheFooter__links-item">
+        &copy;The Pioneer
+      </span>
+      <NuxtLink
+        v-for="item in navLinks" :key="item.name"
+        :to="item.url"
+        class="TheFooter__links-item"
+      >
+        {{ item.name }}
+      </NuxtLink>
     </div>
   </div>
 </template>
 
 <script>
-import PatternShopHorizLogoUrl from '@/assets/images/pattern-shop-logo-02-01.svg';
-import FoundersPlaceLogoUrl from '@/assets/images/founders-place-logo-01.svg';
-import ThePioneerLogoUrl from '@/assets/images/pioneer-logo-01.svg';
-import InstagramIcon from '@/assets/images/instagram-svg-g.svg';
-import TwitterIcon from '@/assets/images/twitter-svg-g.svg';
-import YoutubeIcon from '@/assets/images/youtube-svg-g.svg';
-import FacebookIcon from '@/assets/images/facebook-svg-g.svg';
-
 export default {
   name: 'Footer',
 
-  data() {
-    return {
-      patternShopLogo: PatternShopHorizLogoUrl,
-      foundersPlaceLogo: FoundersPlaceLogoUrl,
-      thePioneerLogo: ThePioneerLogoUrl,
-      socialIcons: {
-        instagram: {
-          icon: InstagramIcon,
-          externalUrl: 'https://www.instagram.com/',
-        },
-        twitter: {
-          icon: TwitterIcon,
-          externalUrl: 'https://www.twitter.com/',
-        },
-        youtube: {
-          icon: YoutubeIcon,
-          externalUrl: 'https://www.youtube.com/',
-        },
-        facebook: {
-          icon: FacebookIcon,
-          externalUrl: 'https://www.facebook.com/',
-        },
-      },
-      footerLinks: [
-        {
-          text: '&copy;Founders Place',
-          url: ''
-        },
-        {
-          text: 'Site Map',
-          url: '/'
-        },
-        {
-          text: 'Terms & Conditions',
-          url: '/'
-        },
-      ],
-    };
-  },
+  computed: {
+    socialLinks() {
+      return [
+        { name: 'Instagram', url: '#' },
+        { name: 'Twitter', url: '#' },
+        { name: 'Youtube', url: '#' },
+        { name: 'Facebook', url: '#' },
+      ];
+    },
+
+    navLinks() {
+      return [
+        { name: 'Sitemap', url: '#' },
+        { name: 'Terms & Conditions', url: '#'},
+      ];
+    },
+  }
 }
 </script>
 
-<style lang="postcss">
-@import "~/assets/css/settings/media-queries.css";
-@import "~/assets/css/mixins/utils.css";
+<style lang="postcss" scoped>
+@import '~/assets/css/settings/media-queries.css';
+@import '~/assets/css/mixins/utils.css';
 
-.Footer {
+.TheFooter {
   width: 100%;
   background-color: var(--color-blue);
   position: relative;
@@ -104,76 +93,72 @@ export default {
   @media (--laptop) {
     flex-direction: row;
     height: 22.5rem;
-    padding: 5rem 8.5rem 5rem 8.5rem;
+    padding: 0 11.5rem 0 8.5rem;
+  }
+
+  @media (--tablet) {
   }
 }
 
-.Footer__company-logos {
+.TheFooter__company-logos {
   display: flex;
   flex-direction: column;
+  row-gap: var(--spacing-lg);
   align-items: center;
   width: 100%;
 
-  @media (--desktop-lg) {
+  @media (--laptop) {
     flex-direction: row;
     flex-grow: 1;
-    width: 100rem;
+    column-gap: var(--spacing-xl);
     height: 100%;
-    margin-bottom: 0;
   }
 }
 
-.Footer__company-logos img {
-  margin-top: var(--spacing-lg);
+/* @mixin fluid-value height, 5.5, 6, 320, 768; */
+
+.TheFooter__logo {
+  height: 4.5rem;
 
   @media (--desktop-lg) {
+    height: 5.5rem;
+  }
+}
+
+.TheFooter__social-links {
+  display: flex;
+  column-gap: var(--spacing-sm);
+  order: -1;
+  color: var(--color-secondary);
+
+  @media (--laptop) {
+    order: initial;
+  }
+}
+
+.TheFooter__social-icons-wrapper {
+  order: -1;
+  margin-top: var(--spacing-xl);
+
+  @media (--laptop) {
+    order: initial;
+    text-align: center;
     margin-top: 0;
   }
 }
 
-.Footer__pattern-shop-logo-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (--desktop-lg) {
-    display: inline-block;
-    width: max-content;
-  }
-}
-
-.Footer__pattern-shop-logo-img {
-  @mixin fluid-value height, 7.5, 8.5, 320, 768;
-}
-
-.Footer__founders-place-logo-img {
-  @mixin fluid-value height, 5.5, 6, 320, 768;
-}
-
-.Footer__the-pioneer-logo-img {
-  @mixin fluid-value height, 5.5, 6, 320, 768;
-}
-
-.Footer__social-icons-wrapper {
-  order: -1;
-  margin-top: var(--spacing-xl);
-
-  @media (--desktop-lg) {
-    width: 23vw;
-    text-align: right;
-    order: initial;
-    margin: 1em 1.5em 5em 0;
-  }
-}
-
-.Footer__social-icons-wrapper a {
+.TheFooter__social-icons-wrapper a {
   display: inline-block;
   width: max-content;
 }
 
-.Footer__social-icon-img {
+.TheFooter__social-icon-img {
   margin: 0 var(--spacing-sm);
-  width: 5rem;
+  width: 4.5rem;
+
+  @media (--laptop) {
+    width: 5rem;
+  }
 
   @media (--desktop-lg) {
     margin: 0 var(--spacing-xs);
@@ -184,33 +169,42 @@ export default {
   }
 }
 
-.Footer__links-wrapper {
+.TheFooter__links-wrapper {
   display: flex;
-  justify-content: space-around;
-  width: 80%;
-  margin-bottom: var(--spacing-xl);
+  justify-content: center;
+  column-gap: var(--spacing-md);
+  width: 100%;
 
-  @media (--desktop-lg) {
-    display: block;
+  @media (--phone-lg-min) {
+    column-gap: var(--spacing-lg);
+  }
+
+  @media (--laptop) {
     position: absolute;
-    right: 5.5%;
+    right: 11.5rem;
     bottom: 5rem;
     width: max-content;
     margin-bottom: 0;
   }
+
+  @media (--desktop-lg) {
+    column-gap: var(--spacing-xl);
+  }
 }
 
-.Footer__links-item {
+.TheFooter__links-item {
   font-size: 1.2rem;
+  font-weight: 600;
   color: white;
 
   @media (--phone-sm) {
     font-size: 1.1rem;
   }
+}
 
-  @media (--desktop-lg) {
-    margin-left: 7rem;
-  }
+.TheFooter__social-icon {
+  width: 5rem;
+  height: auto;
 }
 
 </style>

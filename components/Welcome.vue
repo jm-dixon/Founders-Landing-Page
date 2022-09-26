@@ -50,7 +50,6 @@ export default {
 .Welcome__heading {
   @mixin interpolate margin-bottom, 3, 5;
 
-  padding-left: 8px;
   color: var(--color-red);
 }
 

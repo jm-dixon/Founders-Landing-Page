@@ -1,7 +1,7 @@
 <template>
   <div class="HeroLogo">
     <div class="HeroLogo__logo-wrapper">
-      <img :src="logoUrl" class="HeroLogo__logo-img">
+      <LogoFoundersPlace />
     </div>
   </div>
 </template>
@@ -46,9 +46,15 @@ export default {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 11rem !important;
+
+  @media (--laptop) {
+    height: 12.5rem !important;
+  }
 
   @media (--desktop-lg) {
     flex-direction: row;
+    height: 14rem;
   }
 }
 

@@ -5,7 +5,7 @@
       class="HeroImage__image"
     >
     <div class="HeroImage__logo-container">
-      <p class="HeroImage__logo-text">
+      <p class="HeroImage__logo-text-cs">
         COMING SOON
       </p>
       <p class="HeroImage__logo-text">
@@ -56,7 +56,7 @@ export default {
 .HeroImage__logo-container {
   position: absolute;
   padding: 35px;
-  width: 50%;
+  width: 80%;
   height: auto;
   top: min(200px, 20vw);
   opacity: 0.9;
@@ -69,7 +69,14 @@ export default {
 .HeroImage__logo-text {
   color: var(--color-secondary);
   text-align: center;
-  font-size: 4em;
-  padding: 1.2em 1em 0.5em 1em;
+  font-size: 8em;
+  padding: 0 1em 0.5em 1em;
+}
+
+.HeroImage__logo-text-cs {
+  color: var(--color-secondary);
+  text-align: center;
+  font-size: 6em;
+  padding: 0 1em 0.5em 1em;
 }
 </style>
