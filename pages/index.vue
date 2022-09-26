@@ -2,8 +2,10 @@
   <div class="Home">
     <HeroLogo />
     <HeroImage />
-    <Welcome />
-    <Signup />
+    <div class="Home__grid">
+      <Welcome />
+      <Signup />
+    </div>
     <Footer />
   </div>
 </template>
@@ -48,7 +50,7 @@ export default {
   height: 100vh;
 
   @media (--desktop-lg) {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80rem auto 30rem;
   }
@@ -60,7 +62,7 @@ export default {
   width: 100%;
 
   @media (--desktop-lg) {
-    height: 80rem;
+    height: 10rem;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
@@ -99,7 +101,6 @@ export default {
   height: max-content;
 
   @media (--desktop-lg) {
-    height: 100%;
     grid-column: 1 / span 2;
     grid-row: 3 / 4;
   }
@@ -112,6 +113,13 @@ export default {
     --grid-columns: 2;
     --grid-column-gap: 0;
     --grid-row-gap: 0;
+  }
+}
+
+.Home__grid {
+  @media (--desktop-lg) {
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
 }
 

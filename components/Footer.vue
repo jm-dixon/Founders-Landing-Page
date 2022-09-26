@@ -162,7 +162,7 @@ export default {
     width: 23vw;
     text-align: right;
     order: initial;
-    margin-top: 0;
+    margin: 1em 1.5em 5em 0;
   }
 }
 
