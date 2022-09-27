@@ -23,6 +23,16 @@
  */
 
 :root {
+  --color-primary: #5f275c;
+  --color-secondary: #c9e95f;
+  --color-white: #fff;
+  --color-black: #142628;
+  --color-red: #e04952;
+  --color-light-grey: #999;
+  --color-grey: #666;
+  --color-blue: #1c113b;
+  --color-text-secondary: #5f275c;
+
   /* Shadows */
   --light-shadow: 3px 4px 14px rgb(0 0 0 / 15%);
   --shadow: 0 1px 16px rgb(0 0 0 / 25%);
@@ -108,4 +118,7 @@
   --Grid__segment: calc(var(--Grid__remainder) / var(--Grid__columns));
   --Grid__column: calc(var(--Grid__segment) + var(--Grid__gutter));
   --Grid__maxWidth--grid: calc(var(--Grid__maxWidth) + (var(--Grid__gutter) * 2));
+
+  --min-interpolation-width: 320;
+  --max-interpolation-width: 1280;
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="Welcome">
-    <h1 class="Welcome__heading">Reimagined, redesigned<br>and Revitalised</h1>
+    <h2 class="Welcome__heading">Reimagined, redesigned<br>and Revitalised</h2>
     <p class="Welcome__text text-default">
       Set in the heart of the established Stephenson Quarter, adjacent to
       Newcastle upon Tyne's central railway station, with commanding views
@@ -33,13 +33,15 @@ export default {
 @import "~/assets/css/mixins/utils.css";
 
 .Welcome {
-  @mixin interpolate padding-top, 5, 10;
-  @mixin interpolate padding-bottom, 5, 10;
+  /* @mixin interpolate padding-top, 5, 10;
+  @mixin interpolate padding-bottom, 5, 10; */
 
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-xl);
   width: 100%;
   padding-left: 15%;
   padding-right: 15%;
-  background-color: var(--color-secondary);
 
   @media (--phone-md) {
     padding-left: 8%;
@@ -48,19 +50,18 @@ export default {
 }
 
 .Welcome__heading {
-  @mixin interpolate margin-bottom, 3, 5;
-
+  font-size: 6rem;
+  line-height: 1;
   color: var(--color-red);
+
+  @media (--laptop) {
+    font-size: 8rem;
+  }
 }
 
 .Welcome__text {
   line-height: 1.3;
   color: var(--color-text-secondary);
-  margin-top: 8rem;
-}
-
-.Welcome__text:not(:first-of-type) {
-  margin-top: 2rem;
 }
 
 .Welcome__icons {

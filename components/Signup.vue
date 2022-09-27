@@ -77,7 +77,7 @@ export default {
 
 .Signup__heading {
   margin-bottom: var(--spacing-xl);
-  color: var(--color-text);
+  color: var(--color-secondary);
 }
 
 .Signup__name-wrapper {
@@ -104,13 +104,13 @@ input[type=text] {
   width: 100%;
   font-size: 2.4rem;
   padding: 14px 0;
-  border-bottom: 1px solid var(--color-secondary);
-  color: var(--color-secondary);
+  border-bottom: 1px solid var(--color-white);
+  color: var(--color-white);
 }
 
 input[type=text]::placeholder {
   font-family: var(--font-default);
-  color: var(--color-secondary);
+  color: var(--color-white);
   font-size: 3rem;
 }
 
@@ -120,7 +120,7 @@ input[type=checkbox] {
   /* stylelint-disable */
   aspect-ratio: 1;
   /* stylelint-enable */
-  background-color: var(--color-secondary);
+  background-color: var(--color-white);
   cursor: pointer;
   padding: 10px;
   color: var(--color-primary);

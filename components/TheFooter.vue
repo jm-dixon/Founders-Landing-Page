@@ -3,8 +3,7 @@
   <div class="TheFooter">
     <div class="TheFooter__company-logos">
       <a href="/" target="_blank">
-        <LogoFoundersPlace class="TheFooter__logo text-color-secondary"/>
-        <!-- <img :src="foundersPlaceLogo"> -->
+        <LogoFoundersPlace class="TheFooter__logo text-color-red"/>
       </a>
     </div>
     <div class="TheFooter__social-links">
@@ -18,18 +17,6 @@
           class="TheFooter__social-icon"
         />
       </a>
-      <!-- <IconFacebook class="TheFooter__social-icon" />
-      <IconTwitter class="TheFooter__social-icon" />
-      <IconYoutube class="TheFooter__social-icon" />
-      <IconInstagram class="TheFooter__social-icon" />
-      <a
-        v-for="(obj, key) in socialIcons"
-        :key="key" :src="obj.url"
-        :href="obj.externalUrl"
-        target="_blank"
-      >
-        <img :src="obj.icon" class="TheFooter__social-icon-img">
-      </a> -->
     </div>
 
     <div class="TheFooter__links-wrapper">
