@@ -176,7 +176,6 @@ export default {
 }
 
 .SignupForm__developments-heading {
-  font-size: 8rem;
   color: var(--color-secondary);
 }
 

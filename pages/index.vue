@@ -60,5 +60,8 @@ export default {
   align-items: center;
   justify-content: center;
   background: var(--color-primary);
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 15%;
 }
 </style>
