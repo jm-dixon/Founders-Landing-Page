@@ -2,7 +2,7 @@
 <template>
   <div class="TheFooter">
     <div class="TheFooter__company-logos">
-      <a href="/" target="_blank">
+      <a href="https://www.foundersplacenewcastle.co.uk" target="_blank">
         <LogoFoundersPlace class="TheFooter__logo text-color-red"/>
       </a>
     </div>
@@ -21,7 +21,7 @@
 
     <div class="TheFooter__links-wrapper">
       <span class="TheFooter__links-item">
-        &copy;The Pioneer
+        &copy;Founders Place
       </span>
       <NuxtLink
         v-for="item in navLinks" :key="item.name"
@@ -50,7 +50,6 @@ export default {
 
     navLinks() {
       return [
-        { name: 'Sitemap', url: '#' },
         { name: 'Terms & Conditions', url: '#'},
       ];
     },
