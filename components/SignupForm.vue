@@ -43,8 +43,12 @@
       Our on site developments
     </h2>
     <div class="SignupForm__developments">
-      <LogoThePatternShop class="SignupForm__pattern-shop-logo" />
-      <LogoThePioneer class="SignupForm__the-pioneer-logo" />
+      <a href="https://www.patternshopnewcastle.co.uk/" target="blank">
+        <LogoThePatternShop class="SignupForm__pattern-shop-logo" />
+      </a>
+      <a href="https://www.thepioneernewcastle.co.uk/" target="blank">
+        <LogoThePioneer class="SignupForm__the-pioneer-logo" />
+      </a>
     </div>
   </div>
 </template>

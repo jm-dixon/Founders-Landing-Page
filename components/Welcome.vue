@@ -53,9 +53,15 @@ export default {
   font-size: 6rem;
   line-height: 1;
   color: var(--color-red);
+  margin-top: 1em;
+
+  @media (--tablet) {
+    margin-top: 0;
+  }
 
   @media (--laptop) {
     font-size: 8rem;
+    margin-top: 0;
   }
 }
 

@@ -4,14 +4,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'founders-place',
+    title: 'Founders Place | A Place Where Innovation Meets Inspiration',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Founders Place | A Place Where Innovation Meets Inspiration' },
+      { hid: 'description', name: 'description', content: "Set in the heart of the established Stephenson Quarter, adjacent to Newcastle upon Tyne's central railway station, with commanding views over the River Tyne - Founders Place is a new district of the city bringing purpose to its surroundings. It's reimagined, redesigned and revitalised in a spirit true to the place's history." },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],

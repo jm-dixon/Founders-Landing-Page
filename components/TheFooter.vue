@@ -2,7 +2,7 @@
 <template>
   <div class="TheFooter">
     <div class="TheFooter__company-logos">
-      <a href="https://www.foundersplacenewcastle.co.uk" target="_blank">
+      <a href="/" target="_blank">
         <LogoFoundersPlace class="TheFooter__logo text-color-red"/>
       </a>
     </div>
