@@ -1,12 +1,12 @@
 <template>
   <div class="Welcome">
-    <h2 class="Welcome__heading">Reimagined, redesigned<br>and Revitalised</h2>
+    <h2 class="Welcome__heading">Founders Place is being reimagined, redesigned and revitalised.</h2>
     <p class="Welcome__text text-default">
-      Set in the heart of the established Stephenson Quarter, adjacent to
-      Newcastle upon Tyne's central railway station, with commanding views
-      over the River Tyne - Founders Place is a new district of the city
-      bringing purpose to its surroundings. It's reimagined, redesigned and
-      revitalised in a spirit true to the place's history.
+    Set in the heart of the established Stephenson Quarter, Founders Place has a long history as a melting pot for creative thinkers, entrepreneurial mavericks and visionary leaders. Once George and Robert Stephenson’s powerhouse of innovation in the industrial era, now the revolution is one of sustainable design, life-enhancing technologies, human wellbeing and urban greening.
+    <br><br>
+    Whether you are looking for a place to explore and have fun, build a home or base your business, Founders Place is bringing together leading architects, designers and the best sustainable technologies, to put the quality of human experience at its absolute heart.
+    <br><br>
+    <span class="text-default-bold">Come and join us, find out more…</span>
     </p>
   </div>
 </template>

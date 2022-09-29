@@ -53,7 +53,7 @@ export default {
   height: 11rem;
 
   @media (--laptop) {
-    height: 14rem;
+    height: 19rem;
   }
 }
 
@@ -63,7 +63,7 @@ export default {
   margin: 1em;
 
   @media (--laptop) {
-    height: 7rem;
+    height: 10.1rem;
   }
 }
 
@@ -96,7 +96,8 @@ export default {
     width: 100%;
     height: 100%;
     background: var(--color-primary);
-    opacity: 0.1;
+    mix-blend-mode: multiply;
+    opacity: 0.55;
   }
 }
 
@@ -149,6 +150,7 @@ export default {
   align-items: center;
   text-transform: uppercase;
   color: var(--color-white);
+  font-size: 3rem;
 }
 
 .TheHero__triangle {

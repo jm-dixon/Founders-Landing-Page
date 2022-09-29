@@ -25,6 +25,7 @@
 
 :root {
   --font-default: 'Solano Gothic M', sans-serif;
+  --font-bold: 'Solano Gothic B', sans-serif;
 
   font-family: var(--font-default);
 }
