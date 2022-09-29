@@ -60,6 +60,7 @@ export default {
 .TheHero__logo {
   height: 5.5rem;
   color: var(--color-primary);
+  margin: 1em;
 
   @media (--laptop) {
     height: 7rem;
@@ -117,6 +118,7 @@ export default {
 
 .TheHero__coming-soon {
   font-size: 3rem;
+  filter: drop-shadow(3px 3px 3px #000);
 
   @media (--laptop) {
     font-size: 6rem;
@@ -129,6 +131,7 @@ export default {
 
 .TheHero__heading {
   font-size: 4.5rem;
+  filter: drop-shadow(3px 3px 3px #000);
 
   @media (--laptop) {
     font-size: 8rem;

@@ -21,7 +21,7 @@
 
     <div class="TheFooter__links-wrapper">
       <span class="TheFooter__links-item">
-        &copy;The Pioneer
+        &copy;Founders Place
       </span>
       <NuxtLink
         v-for="item in navLinks" :key="item.name"
@@ -50,7 +50,6 @@ export default {
 
     navLinks() {
       return [
-        { name: 'Sitemap', url: '#' },
         { name: 'Terms & Conditions', url: '#'},
       ];
     },
