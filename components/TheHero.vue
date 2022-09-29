@@ -42,7 +42,7 @@ export default {
   height: calc(100vh - var(--spacing-md));
 
   @media (--laptop) {
-    height: calc(100vh - var(--spacing-xl));
+    height: calc(100vh - var(--spacing-lg));
   }
 }
 
@@ -74,7 +74,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   flex: 1;
-  padding-top: 20rem;
+  padding-top: var(--spacing-lg);
   padding-bottom: var(--spacing-lg);
 }
 
