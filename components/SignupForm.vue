@@ -28,7 +28,7 @@
           for="signup-terms-conditions"
           class="SignupForm__terms-label"
         >
-          I agree for The Pioneer to use the submitted information
+          I agree for Founders Place to use the submitted information
           for marketing and direct communications.
         </label>
       </div>
