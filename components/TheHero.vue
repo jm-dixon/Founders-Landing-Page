@@ -95,7 +95,7 @@ export default {
     z-index: 1;
     width: 100%;
     height: 100%;
-    background: var(--color-primary);
+    background: var(--color-blue);
     mix-blend-mode: multiply;
     opacity: 0.55;
   }
