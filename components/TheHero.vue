@@ -114,6 +114,7 @@ export default {
   @media (--laptop) {
     row-gap: var(--spacing-xl);
     width: 88.6rem;
+    padding-top: 10rem;
   }
 }
 
