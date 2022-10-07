@@ -5,20 +5,16 @@
     </div>
     <div class="TheHero__inner">
       <div class="TheHero__image">
-        <img src="images/hero-image.jpeg">
+        <img src="images/hero-image.jpeg" />
       </div>
       <div class="TheHero__heading-wrapper">
-        <p class="TheHero__coming-soon">
-          COMING SOON
-        </p>
+        <p class="TheHero__coming-soon">COMING SOON</p>
         <p class="TheHero__heading">
           A PLACE WHERE INNOVATION MEETS INSPIRATION
         </p>
       </div>
       <div class="TheHero__signup-hint">
-        <p>
-          For updates sign up below
-        </p>
+        <p>For updates sign up below</p>
         <GraphicTriangle class="TheHero__triangle" />
       </div>
     </div>
@@ -28,7 +24,7 @@
 <script>
 export default {
   name: 'TheHero',
-};
+}
 </script>
 
 <style lang="postcss" scoped>
@@ -39,11 +35,6 @@ export default {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - var(--spacing-md));
-
-  @media (--laptop) {
-    height: calc(100vh - var(--spacing-lg));
-  }
 }
 
 .TheHero__top-bar {
@@ -72,10 +63,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex: 1;
-  padding-top: var(--spacing-lg);
-  padding-bottom: var(--spacing-lg);
 }
 
 .TheHero__image {
@@ -110,11 +99,11 @@ export default {
   width: 27rem;
   line-height: 1;
   color: var(--color-white);
+  padding: var(--spacing-3xl) 0;
 
   @media (--laptop) {
     row-gap: var(--spacing-xl);
     width: 88.6rem;
-    padding-top: 10rem;
   }
 }
 
@@ -151,7 +140,12 @@ export default {
   align-items: center;
   text-transform: uppercase;
   color: var(--color-white);
-  font-size: 3rem;
+  font-size: 2rem;
+  padding-bottom: var(--spacing-sm);
+
+  @media (--laptop) {
+    font-size: 3rem;
+  }
 }
 
 .TheHero__triangle {
